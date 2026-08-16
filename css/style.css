@@ -46,7 +46,7 @@ html { scroll-behavior: smooth; }
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url(../assets/bg-lines.svg), linear-gradient(160deg, #06211E 0%, #0B3D39 50%, #123F3A 100%);
+  background-image: linear-gradient(160deg, rgba(6, 33, 30, 0.55), rgba(6, 33, 30, 0.8)), url(../assets/bg-photo.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
