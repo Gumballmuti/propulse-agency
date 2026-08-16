@@ -136,26 +136,41 @@
         <p class="eyebrow eyebrow-center reveal">Comment ça marche</p>
         <h2 class="section-title reveal">Une méthode simple, du premier café au lancement</h2>
 
-        <div class="steps">
-          <div class="step reveal">
-            <span class="step-number">01</span>
-            <h3>On discute</h3>
-            <p>Un échange sans engagement pour comprendre vos objectifs, votre activité et vos contraintes.</p>
+        <div class="carousel reveal" id="processCarousel">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="step">
+                <span class="step-number">01</span>
+                <h3>On discute</h3>
+                <p>Un échange sans engagement pour comprendre vos objectifs, votre activité et vos contraintes.</p>
+              </div>
+              <div class="step">
+                <span class="step-number">02</span>
+                <h3>On propose</h3>
+                <p>Une proposition claire : ce qu'on fait, comment, en combien de temps et pour quel budget.</p>
+              </div>
+              <div class="step">
+                <span class="step-number">03</span>
+                <h3>On construit</h3>
+                <p>Design, développement ou coaching — avec des points d'étape réguliers, pas de surprise à la fin.</p>
+              </div>
+              <div class="step">
+                <span class="step-number">04</span>
+                <h3>On propulse</h3>
+                <p>Mise en ligne, transmission des clés et suivi pour que ça continue de fonctionner sans vous.</p>
+              </div>
+            </div>
           </div>
-          <div class="step reveal">
-            <span class="step-number">02</span>
-            <h3>On propose</h3>
-            <p>Une proposition claire : ce qu'on fait, comment, en combien de temps et pour quel budget.</p>
-          </div>
-          <div class="step reveal">
-            <span class="step-number">03</span>
-            <h3>On construit</h3>
-            <p>Design, développement ou coaching — avec des points d'étape réguliers, pas de surprise à la fin.</p>
-          </div>
-          <div class="step reveal">
-            <span class="step-number">04</span>
-            <h3>On propulse</h3>
-            <p>Mise en ligne, transmission des clés et suivi pour que ça continue de fonctionner sans vous.</p>
+
+          <div class="carousel-controls">
+            <button type="button" class="carousel-arrow carousel-prev" aria-label="Étape précédente">‹</button>
+            <div class="carousel-dots" role="tablist" aria-label="Étapes">
+              <button type="button" class="carousel-dot is-active" data-index="0" aria-label="Étape 1" aria-selected="true"></button>
+              <button type="button" class="carousel-dot" data-index="1" aria-label="Étape 2" aria-selected="false"></button>
+              <button type="button" class="carousel-dot" data-index="2" aria-label="Étape 3" aria-selected="false"></button>
+              <button type="button" class="carousel-dot" data-index="3" aria-label="Étape 4" aria-selected="false"></button>
+            </div>
+            <button type="button" class="carousel-arrow carousel-next" aria-label="Étape suivante">›</button>
           </div>
         </div>
       </div>
