@@ -196,17 +196,21 @@ img { max-width: 100%; display: block; }
   padding: clamp(80px, 14vw, 140px) 0 clamp(60px, 10vw, 100px);
 }
 
+.hero-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .hero-shape {
   position: absolute;
   border-radius: 50%;
   z-index: 0;
-}
-.hero-shape-a {
-  width: 420px;
-  height: 420px;
-  background: var(--beige-300);
-  top: -160px;
-  right: -120px;
 }
 .hero-shape-b {
   width: 280px;
