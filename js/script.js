@@ -1,5 +1,32 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(contactForm);
+    formStatus.textContent = 'Envoi en cours…';
+    formStatus.classList.remove('is-error');
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString(),
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        formStatus.textContent = 'Merci ! Votre message a bien été envoyé.';
+        contactForm.reset();
+      })
+      .catch(() => {
+        formStatus.textContent = "Une erreur est survenue, réessayez ou écrivez-nous directement à mail.propulse.agency@gmail.com.";
+        formStatus.classList.add('is-error');
+      });
+  });
+}
+
 const navToggle = document.getElementById('navToggle');
 const primaryNav = document.getElementById('primaryNav');
 

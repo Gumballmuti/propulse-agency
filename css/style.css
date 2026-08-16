@@ -575,6 +575,15 @@ img { max-width: 100%; display: block; }
 .contact-form .btn { margin-top: 22px; }
 .hidden-field { position: absolute; left: -9999px; }
 
+.form-status {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--teal-400);
+  min-height: 1.2em;
+}
+.form-status.is-error { color: var(--beige-300); }
+
 /* ===========================================================
    FOOTER
    =========================================================== */
