@@ -14,6 +14,7 @@
   --beige-100: #FFF8E1;
   --beige-200: #FBE9AE;
   --beige-300: #F3D371;
+  --yellow-flash: #FFDA00;
 
   --white: #FFFFFF;
   --ink: var(--beige-100);
@@ -63,7 +64,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  color: var(--ink);
+  color: var(--yellow-flash);
   line-height: 1.15;
   margin: 0 0 0.5em;
 }
